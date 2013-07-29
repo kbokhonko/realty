@@ -1,0 +1,9 @@
+- flash.each do |key, msg|
+  - if key == :notice
+    .alert.alert-success= msg
+  - elsif key == :error
+    .alert.alert-error= msg
+  - elsif key == :info
+    .alert.alert-info= msg
+  - else
+    .alert.alert-block= msg

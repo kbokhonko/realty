@@ -1,0 +1,4 @@
+- @poster.comments.each do |comment|
+  %p
+    %strong #{comment.user.nickname}:
+    = comment.text
