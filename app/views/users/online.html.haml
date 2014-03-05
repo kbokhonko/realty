@@ -1,0 +1,13 @@
+%table.table.table-striped
+  %thead
+    %tr
+      %th Id
+      %th Email
+      %th Username
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= user.id
+        %td= user.email
+        %td= user.username
+        

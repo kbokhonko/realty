@@ -41,7 +41,6 @@ class PostersController < ApplicationController
       flash[:recaptcha_error] = "There was an error with the recaptcha code below. Please re-enter the code and click submit."
       redirect_to new_user_poster_path
     end
-
   end
 
   def update

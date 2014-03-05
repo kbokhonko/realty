@@ -6,6 +6,7 @@ Realty::Application.routes.draw do
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   resources :users do
+    get "online", :on => :collection
     resources :posters
   end
 
